@@ -2,7 +2,7 @@
 
 MRI reconstruction package by Zimu 
 
-Most of the code are with examples. However, the dicom data are not available. 
+Most of the code are with examples. However, the dicom data are not available because it contains personal information. 
 
 Example data: 
 1. single slice phantom
