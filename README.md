@@ -1,6 +1,6 @@
 # pymri_recon
 
-MRI reconstruction package by Zimu 
+MRI reconstruction package by Zimu Huo
 
 Most of the code are with examples. However, the dicom data are not available because it contains personal information. 
 
