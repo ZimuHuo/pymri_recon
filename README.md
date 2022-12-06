@@ -2,7 +2,7 @@
 
 MRI reconstruction package by Zimu 
 
-You 
+Most of the code are with examples. However, the dicom data are not available. 
 
 Example data: 
 1. single slice phantom
