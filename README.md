@@ -1,30 +1,23 @@
 # pymri_recon
 
-## Description
 MRI reconstruction package
-
-## Author 
-Zimu Huo
 
 
 ## set up
-
 Clone the github repo in to local 
 ```bash
 git clone https://github.com/ZimuHuo/pymri_recon.git
 ```
-
 Create conda env from .yml files 
 ```bash
 cd pymri_recon
 conda env create -f environment.yml
 ```
-
 Acvtivate the conda environment
 ```bash
  conda activate pymrirecon
 ```
-
+Navigate to the lib folder and download example data
 ```bash
 mkdir lib
 cd lib
