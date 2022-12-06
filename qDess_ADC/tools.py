@@ -206,7 +206,7 @@ def search_and_load_database(TR,TE,Tg,GhArea,GlArea,alpha_deg):
             found = True
             
     if found == False:
-        create_database(TR,TE,Tg,GhArea,GlArea,Alpha_deg)
+        create_database(TR,TE,Tg,GhArea,GlArea,alpha_deg)
         
     with open(database_name, 'rb') as inp:
         database = pickle.load(inp)
@@ -219,7 +219,7 @@ def find_min_ind_val(tmp):
     return m, ind
 
 def DESS2dFit_img(TR,TE,Tg,GhArea,GlArea,alpha_deg,Nstates,e1_H,e2_H,e1_L,e2_L):
-    database = search_and_load_database(TR,TE,Tg,GhArea,GlArea,Alpha_deg)
+    database = search_and_load_database(TR,TE,Tg,GhArea,GlArea,alpha_deg)
     bGrid_alpha_ADC, r1Grid2D_alpha, r2Grid2D_alpha,Dvalues, NT2, ND = database.bGrid1D, database.r1Grid2D_alpha, database.r2Grid2D_alpha, database.Dvalues, database.NT2, database.ND
     T1values, T2values, Dvalues = database.T1values, database.T2values, database.Dvalues
     ny, nx = e1_H.shape

@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from util.coil import *
 from util.fft import *
-from util.sensegrappa import *
+from util.grappa import * 
 
 def vc_grappa(dataR, calib, R, kh = 4, kw = 5):
     kspace = dataR
