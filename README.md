@@ -17,7 +17,14 @@ Acvtivate the conda environment
 ```bash
  conda activate pymrirecon
 ```
-Navigate to the lib folder and download example data
+I used twixtools to read the file, you can also use pymapvbvd. 
+```bash
+git clone https://github.com/pehses/twixtools.git
+cd twixtools
+pip install .
+```
+
+Navigate to the pymrirecon folder and download example data
 ```bash
 mkdir lib
 cd lib
