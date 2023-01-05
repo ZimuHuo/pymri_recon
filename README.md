@@ -1,6 +1,11 @@
 # pymri_recon
 
 MRI reconstruction package
+This repo provides an introduction to magnetic resonance imaging (MRI). With two powerful components - sequence simulation and parallel imaging simulation - this software is designed to help you better understand and optimize MRI techniques.
+
+This code boasts a robust sequence simulation module featuring an SSFP sequence with advanced capabilities such as bssfp phase cycling, quadratic RF spoiling, and N periodic bSSFP. This allows you to simulate and analyze the performance of these sequences, helping you to identify and optimize your SSFP parameters. Additionally, I've also implemented a C++ version of this module (with a python interface) that is more than 100 times faster than the python implementation, ensuring that you can quickly and easily run simulations without sacrificing performance.
+
+The parallel imaging simulation component includes the basic of conventional parallel imaging (SENSE, cgSENSE, and two versions of GRAPPA). This allows you to simulate parallel imaging techniques with fully sampled data. This module also includes a g-factor map to help users visualize their imaging results. With this, you can better understand the strengths and limitations of these techniques and make informed decisions about MRI reconstruction techniques.
 
 
 ## set up
