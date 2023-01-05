@@ -1,7 +1,5 @@
 # pymri_recon
 
-# I have many more features to come, and this is just a quick demo for the PhD application.
-
 MRI reconstruction package
 
 
