@@ -2,7 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from util.coil import *
 import time
-
+def stitch(images, row = 4):
+    ny, nx, ns = images.shape
+    images = images.reshape(ny, nx, row, ns//row)
+    out = np.zeros([ny * row, nx * ns //row], dtype =images.dtype)
+    for r in range(row): 
+        out[r*ny:(r+1)*ny] = images[...,r,:].reshape(ny,-1, order = "F")
+    return out
 def mosaic(images):
     fig = plt.figure(figsize=(16, 12), dpi=80)
     l = images.shape[-1]

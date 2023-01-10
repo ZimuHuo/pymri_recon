@@ -1,6 +1,7 @@
 from util.fft import *
 from util.epi import *
 from util.rank import *
+import cv2 
 def entropy(data):
     if len(data.shape) > 2:
         image = np.sum(np.abs(data)**2, -1)
