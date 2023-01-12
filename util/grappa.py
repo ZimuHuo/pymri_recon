@@ -35,7 +35,7 @@ Link: https://pubmed.ncbi.nlm.nih.gov/12111967/
 def grappa(data, acs, method = "conv", kh = 4, kw = 5, lamda = 0.01,combine =True, w= None):
     if method == "conv":
         return grappa2(data, acs, kh , kw , lamda, combine, w)
-    if method == "mul":
+    else:
         return grappa1(data, acs, kh , kw , lamda, combine, w)
 
 
